@@ -148,6 +148,7 @@ footer {
     font-size: 1rem;
   }
 }
+
 /* Profile Picture */
 .profile-pic {
   width: 150px;
@@ -157,4 +158,80 @@ footer {
   margin-bottom: 1rem;
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+#theme-toggle:hover {
+  background: #ffe600;
+  color: #000;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+
+.dark-mode nav {
+  background: #222;
+}
+
+.dark-mode .project {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+.dark-mode footer {
+  background: #222;
+}
+
+.dark-mode #skills li {
+  background: #333;
+  color: #eee;
+}
+
+/* Edit Button */
+#edit-btn {
+  margin-top: 1rem;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  background: #4facfe;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#edit-btn:hover {
+  background: #00c2fe;
+}
+
+/* Editable content styling */
+#about-text[contenteditable="true"] {
+  background: #f0f8ff;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px dashed #4facfe;
+  outline: none;
+}
+
+.dark-mode #about-text[contenteditable="true"] {
+  background: #2a2a2a;
+  border-color: #4facfe;
+  color: #eee;
 }
